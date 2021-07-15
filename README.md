@@ -11,7 +11,7 @@ docker-compose up -d
 docker-compose run --rm app bash
 
 # create database
-rails db:migrate
+rails db:create
 
 # migration database
 rails db:migrate
