@@ -3,8 +3,12 @@
 class Product::Fetch < ApplicationService
   
   def perform(url)
-    response = WebCrawler.process(url)
-    "ok"
+    begin
+      response = WebCrawler.process(url)
+      "ok"
+    rescue Exception => e 
+      error_validate_failed!(e)
+    end
   end
 end
 
