@@ -1,6 +1,6 @@
 ### Installing
 
-##### Server Host = localhost:3008
+##### Server Host: localhost:3008
 
 ```sh
 docker-compose up -d
