@@ -1,4 +1,4 @@
-### Installing
+### Installing (Not support Apple M1 chip)
 
 ##### Server Host: localhost:3008
 
