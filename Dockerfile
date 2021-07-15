@@ -15,6 +15,8 @@ COPY Gemfile.lock Gemfile.lock
 
 RUN gem install bundler -v 2.1.4;
 RUN bundle install
+RUN rails db:create
+RUN rails db:migrate
 
 ARG APP_HOME="/app"
 COPY . ${APP_HOME}
